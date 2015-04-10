@@ -24,6 +24,9 @@
 		}
 		.logo-area .x{
 			display: none;
+			position: absolute;
+			top: 26px;
+			left: 14%;
 		}
 		.nav-bar{
 			width: 70%;
@@ -51,11 +54,13 @@
 				position: static;
 				overflow-x: scroll;
 			}
+			.nav-bar ul{
+				text-align: left;
+				margin-left: 6%;
+			}
 			.logo-area .x{
 				display: block;
-				position: absolute;
-				top: 14%;
-				left: 14%;
+				
 			}
 			
 		}
@@ -80,5 +85,14 @@
 		</header>
 
 	</div>
+
+	<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.x').click(function(){
+				$('.nav-bar').toggle();
+			})
+		});
+	</script>
 </body>
 </html>
