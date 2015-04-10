@@ -4,63 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
 	<title>html5</title>
-	<style>
-		.header{
-			height: 80px;
-			background-color: #ddd;
-		}
-		.nav{
-			width: 80%;
-			height: 80px;
-			margin: 0 auto;
-		}
-		.nav>.logo{
-			height: 80px;
-			width: 14%;
-			float: left;
-		}
-		.logo>img{
-			margin-top: 4px;
-		}
-		.nav>ul{
-			width: 86%;
-			height: 80px;
-			float: right;
-			margin: 0;
-			padding: 0;
-			text-align: right;
-		}
-		.nav>ul>li{
-			display: inline;
-			line-height: 80px;
-			margin-left: 3em;
-		}
-		.nav>ul>li>a{
-			text-decoration: none;
-		}
-		.nav>ul>li:first-child{
-			margin-left: 0;
-		}
-
-		@media (max-width: 780px) {
-			.nav>.logo{
-				float: none;
-				width: 100%;
-				text-align: center;
-			}
-			.nav>ul{
-				width: 100%;
-				float: none;
-				overflow-y: hidden;
-			}
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div class="header">
 		<div class="nav">
 			<div class="logo">
-				<img src="logo.png">
+				<p>asd</p>
+				<img src="logo.png" id="logo">
 			</div>
 			<ul>
 				<li><a href="#">首页</a></li>
@@ -71,5 +22,13 @@
 			</ul>
 		</div>
 	</div>
+	<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#logo').click(function(){
+				$('.nav ul').toggle();
+			})
+		});
+	</script>
 </body>
 </html>

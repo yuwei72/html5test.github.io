@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>page</title>
+	<style type="text/css">
+		ul,div,body{ padding: 0; margin: 0;}
+		a{ text-decoration: none; }
+		.pageContext{
+			width: 90%;
+			margin: 0 auto;
+			height: 500px;
+			background-color: #ddd;
+		}
+		.header{
+			position: relative;
+		}
+		.logo-area{ 
+			width: 10%;
+			position: absolute;
+			left: 10%;
+			text-align: center;
+		}
+		.logo-area .x{
+			display: none;
+		}
+		.nav-bar{
+			width: 70%;
+			position: absolute;
+			right: 10%;
+			text-align: center;
+		}
+		.nav-bar ul{
+			min-width: 632px;
+		}
+		.nav-bar ul li{ 
+			display: inline-block;
+			width: 15%;
+			line-height: 72px;
+		}
+
+		@media (max-width: 780px) {
+			.logo-area{ 
+				width: 100%;
+				position: static;
+				border-bottom: 1px solid #fff;
+			}
+			.nav-bar{
+				width: 100%;
+				position: static;
+				overflow-x: scroll;
+			}
+			.logo-area .x{
+				display: block;
+				position: absolute;
+				top: 14%;
+				left: 14%;
+			}
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="pageContext">
+		<header class="header">
+			<div class="logo-area">
+				<img src="X.png" class="x">
+				<img src="logo.png">
+			</div>
+			<nav class="nav-bar">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">我要投资</a></li>
+					<li><a href="#">安全保障</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+			</nav>
+		</header>
+
+	</div>
+</body>
+</html>
