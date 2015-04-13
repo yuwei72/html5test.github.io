@@ -1,0 +1,42 @@
+@media (min-width: 993px) {
+	body{ background-color: red;}
+	.head-right{ display: block !important; }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+	body{ background-color: blue;}
+	.head-right{ display: block !important; }
+	.section-area .item{ width: 48%;}
+}
+
+@media (max-width: 768px) {
+	body{ background-color: gray;}
+	.head-area{
+		width: 100%;
+	}
+	.head-left{
+		width: 100%;
+		text-align: center;
+	}
+	.head-left .colse{
+		display: block;
+	}
+	.head-right{
+		position: absolute;
+		right: 8%;
+  		top: 43px;
+	}
+	.head-right ul{
+		padding-left: 0;
+		background-color: rgba(0,0,0,.6);
+		border-radius: 6px;
+		font-size: 14px;
+	}
+	.head-right ul li{
+		float: none;
+		text-align: center;
+	}
+	.section-area .item{ 
+		width: 100%;
+	}
+}

@@ -1,0 +1,9 @@
+$(function(){
+	console.log('loading');
+	$('#colse').click(
+		function(){
+			$(this).toggleClass('cor');
+			$('#nav').fadeToggle();
+		}
+	)
+});

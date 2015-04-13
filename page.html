@@ -12,9 +12,11 @@
 			margin: 0 auto;
 			height: 500px;
 			background-color: #ddd;
+			padding-top: 20px;
 		}
 		.header{
-			position: relative;
+			background-color: #ddd;
+			height: 74px;
 		}
 		.logo-area{ 
 			width: 10%;
@@ -42,8 +44,33 @@
 			width: 15%;
 			line-height: 72px;
 		}
-
-		@media (max-width: 780px) {
+		
+		.context-list .item{
+			width: 32%;
+			float: left;
+			background-color: red;
+			height: 300px;
+			margin-right: 6px;
+			margin-bottom: 6px;
+		}
+		@media ( max-width:  981px) {
+			.context-list .item{
+				width: 49%;
+			}
+		}
+		@media (min-width: 781px and max-width: 980px){
+			.nav-bar{
+				display: block !important;
+			}
+			.context-list .item{
+				width: 32%;
+			}
+		}
+		
+		@media (max-width: 780px){
+			.header{
+				height: 170px;
+			}
 			.logo-area{ 
 				width: 100%;
 				position: static;
@@ -60,30 +87,47 @@
 			}
 			.logo-area .x{
 				display: block;
-				
 			}
-			
+			.context-list .item{
+				float: none;
+				width: 100%;
+			}
 		}
 	</style>
 </head>
 <body>
-	<div class="pageContext">
-		<header class="header">
-			<div class="logo-area">
-				<img src="X.png" class="x">
-				<img src="logo.png">
-			</div>
-			<nav class="nav-bar">
-				<ul>
-					<li><a href="#">首页</a></li>
-					<li><a href="#">我要投资</a></li>
-					<li><a href="#">安全保障</a></li>
-					<li><a href="#">联系我们</a></li>
-					<li><a href="#">关于我们</a></li>
-				</ul>
-			</nav>
-		</header>
 
+	<header class="header">
+		<div class="logo-area">
+			<img src="X.png" class="x">
+			<img src="logo.png">
+		</div>
+		<nav class="nav-bar">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">我要投资</a></li>
+				<li><a href="#">安全保障</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">关于我们</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="pageContext">
+		<div class="context-list">
+			<div class="item">
+				
+			</div>
+			<div class="item">
+				
+			</div>
+			<div class="item">
+				
+			</div>
+			<div class="item">
+				
+			</div>
+		</div>
 	</div>
 
 	<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
